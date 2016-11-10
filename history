@@ -1,0 +1,406 @@
+     1	10:35	cat output.dat
+     2	10:36	g03 < input.dat > output.dat &
+     3	10:36	ls /scratch/
+     4	10:36	ls -ltr /scratch
+     5	10:36	jobs
+     6	10:36	kill %1
+     7	10:38	source $g03root/g03/bsd/g03.login
+     8	10:40	vi output.dat
+     9	10:41	reset
+    10	10:41	rm output.dat
+    11	10:41	echo $GAUSS_SCRDIR
+    12	10:42	g03 < input.dat
+    13	10:43	$g03root/g03/g03 < input.dat
+    14	10:46	setenv g03root /usr/local/gaussian03-rev-E01-64
+    15	10:46	setenv GAUSS_SCRDIR /home/teacher
+    16	10:46	source $g03root/g03/bsd/test.login
+    17	14:09	quit
+    18	14:12	cd /data/teacher/pregap_intro/
+    19	15:15	gap4
+    20	15:16	/usr/local/staden/linux-x86_64-bin/gap4
+    21	11:26	ls *aux
+    22	11:28	ls xc*
+    23	11:45	mkdir pregap_intro2
+    24	11:45	cd pregap_intro2
+    25	11:46	cp ../pregap_intro/Sample* .
+    26	11:46	cp ../pregap_intro/lorist2.vector .
+    27	11:46	cd ../pregap_intro
+    28	11:46	cd ../pregap_intro2
+    29	13:18	/usr/local/staden/linux-x86_64-bin/pregap4
+    30	13:38	cd ../stadenexercise/
+    31	13:38	ls *f1*
+    32	13:38	ls *f*.ztr
+    33	13:39	ls *r1.ztr
+    34	13:39	ls *f1.ztr
+    35	13:39	ls *fl.ztr
+    36	13:39	ls xb6315*
+    37	13:39	ls xb63e5*
+    38	10:46	ls -laurt
+    39	10:46	more .cshrc
+    40	10:46	mv .cshrc .cshrc-SAF
+    41	10:47	mv .tcsh_history_helix .tcsh_history_helix-SAF
+    42	16:11	echo $DISPLAY
+    43	16:11	setenv DISPLAY helix.nih.gov:11.0
+    44	16:12	setenv DISPLAY localhost:11.0
+    45	10:29	mesg
+    46	10:30	egrep teacher /etc/passwd
+    47	7:37	setenv LD_LIBRARY_PATH=/usr/local/boost/lib:$LD_LIBRARY_PATH
+    48	7:44	setenv LD_LIBRARY_PATH /usr/local/boost/lib
+    49	7:44	setenv LD_LIBRARY_PATH /usr/local/boost/lib:$LD_LIBRARY_PATH
+    50	7:45	setenv LD_LIBRARY_PATH /usr/local/boost/lib:${LD_LIBRARY_PATH}
+    51	7:55	man setenv
+    52	16:08	module loadx
+    53	16:09	cd /usr/local/lmod/lmod/lmod
+    54	16:09	cd init
+    55	16:09	more cshrc
+    56	16:09	more /usr/local/lmod/lmod/lmod/init/csh
+    57	16:09	grep "\-v" *
+    58	16:10	ls -rtl
+    59	16:10	diff cshrc cshrc.ORIG
+    60	16:11	more /usr/local/lmod/modulefiles/IMOD/4.8.43
+    61	16:12	module load bowtie
+    62	16:12	module load IMOD
+    63	16:12	module unload IMOD
+    64	16:14	module load IMOD/4.7.15
+    65	16:15	module display IMOD
+    66	16:17	module avail IMOD
+    67	16:17	module load IMOD/4.8.43-test
+    68	17:29	/local/csd/A/GoldSuite_2016/bin/gold &
+    69	17:31	ls /fdb/pdb
+    70	17:32	ls /fdb/pdb/zz
+    71	17:32	cd /fdb
+    72	17:35	pushd /local/csd/A/GoldSuite_2016/
+    73	11:00	ml python/2.7.3
+    74	11:01	ml openmpi/1.10.0/gcc-4.4.7-pmi2
+    75	13:49	ml openmpi/1.10.0/gcc-4.4.7
+    76	13:49	mpiexec -n 5 python -m mpi4py helloworld
+    77	12:58	module load Gold
+    78	12:58	module load GoldSuite
+    79	12:59	gold &
+    80	14:29	echo $HOST
+    81	14:30	echo $PATH
+    82	14:30	subm
+    83	14:30	ps
+    84	15:22	echo $IMOD_PROCESSORS
+    85	15:24	echo $HOSTNAME
+    86	15:24	module display IMOD/4.8.43-test2
+    87	15:24	module load IMOD/4.8.43-test2
+    88	7:41	cd /scratch/teacher/
+    89	7:41	cd rail
+    90	7:41	python rail_installer -h
+    91	7:44	/usr/local/apps/bowtie/1.1.2/bin/bowtie
+    92	7:44	ls /usr/local/apps/bowtie/
+    93	7:44	ls /usr/local/apps/bowtie/2-2.2.7/bin
+    94	7:44	ls /usr/local/apps/bowtie/2-2.2.7
+    95	7:45	ls /usr/local/apps/bowtie/2-2.2.7/bowtie2
+    96	7:45	/usr/local/apps/bowtie/2-2.2.7/bowtie2
+    97	7:45	ml show bowtie
+    98	7:45	module load samtools
+    99	7:45	module load pypy
+   100	7:45	module load ucsc
+   101	7:45	module load aws
+   102	7:46	OLD_PATH=$PATH
+   103	7:46	epxort /usr/local/apps/bowtie/1.1.2/bin:/usr/local/apps/bowtie/2-2.2.7:$PATH
+   104	7:46	export /usr/local/apps/bowtie/1.1.2/bin:/usr/local/apps/bowtie/2-2.2.7:$PATH
+   105	7:46	export PATH=/usr/local/apps/bowtie/1.1.2/bin:/usr/local/apps/bowtie/2-2.2.7:$PATH
+   106	13:24	cd ~/matlab_compiler_test
+   107	13:28	cp /usr/local/matlab64/extern/examples/compiler/magicsquare.m ./
+   108	13:48	licenses
+   109	13:14	module load xxx
+   110	13:16	echo $PYTHONPATH
+   111	13:17	ls -l x
+   112	13:17	rm x
+   113	13:17	env | sort > x
+   114	13:17	env | sort > y
+   115	13:17	diff x y
+   116	13:18	module load python/2.7.9
+   117	13:18	echo $LD_LIBRARY_PATH
+   118	13:19	export LD_LIBRARY_PATH=/usr/local/Anaconda/envs/py2.7.9/lib
+   119	13:40	module load ngsutils
+   120	13:40	module load python
+   121	13:40	xxx help
+   122	13:43	xxx
+   123	13:43	which xxx
+   124	13:43	xxx help CMD
+   125	16:41	xeyes
+   126	14:43	module unload emboss repeatmasker
+   127	14:43	script screen.log
+   128	14:43	module load emboss repeatmasker
+   129	14:44	seqret
+   130	14:45	repeatmasker ay001401.fasta
+   131	15:02	cat screen.log
+   132	9:34	groups
+   133	10:11	ml avail ucsc
+   134	10:11	cat foo.sh
+   135	10:11	rm -f slurm-167*
+   136	10:11	chmod +x foo.sh
+   137	10:12	ls /etc/profile.d
+   138	10:13	cat /etc/profile.d/modules.sh
+   139	10:14	vim foo.sh
+   140	10:14	./foo.sh
+   141	19:34	w
+   142	19:34	which w
+   143	19:34	man w
+   144	19:35	w | grep godlove
+   145	9:53	ml python/3.5
+   146	9:53	which aws
+   147	9:53	aws help
+   148	13:35	ml multiqc
+   149	13:44	multiqc --help
+   150	11:32	module load Anaconda
+   151	11:36	conda create --copy -n py_hiclib python=2.7 numpy scipy matplotlib biopython pysam hdf5 cython h5py
+   152	11:44	conda remove --all -n py_hiclib
+   153	11:46	ssh biowulf
+   154	10:14	checkquota hooverdm
+   155	12:38	ml pytho
+   156	12:38	ml python
+   157	12:38	ml rpy2
+   158	12:42	ml glu
+   159	12:42	ml glupython
+   160	12:43	ll /usr/local/apps/glu/1.0b3
+   161	12:44	ml show glu
+   162	12:44	vim -R $(which glu )
+   163	12:44	which glu
+   164	12:45	vim -R /usr/local/apps/glu/1.0b3/glu
+   165	12:45	cd /usr/local/apps/glu/1.0b3
+   166	12:47	ls glu-1.0b3_dev-py2.7.egg
+   167	12:47	ls glu-1.0b3_dev-py2.7.egg/glu
+   168	12:47	ls glu-1.0b3_dev-py2.7.egg/glu/lib
+   169	12:48	python
+   170	16:25	checkquota btmiller
+   171	16:25	less /usr/local/sbin/quotaclient
+   172	16:25	ls -l /usr/local/sbin/quotaclient
+   173	20:02	ls -la /usr/local/sbin/quotaclient
+   174	20:03	cat /data/monitor/checkquota/quotaclient | more
+   175	22:25	nano /usr/local/sbin/quotaclient
+   176	22:25	vi /usr/local/sbin/quotaclient
+   177	9:16	userdata pranzatellitj
+   178	9:16	exitr
+   179	10:45	which checkquota
+   180	10:45	ls -l /usr/local/bin/checkquota
+   181	10:45	checkquota susanc
+   182	10:45	ls -ld /home/teacher
+   183	11:43	checkquota -v
+   184	13:30	xclock
+   185	13:30	nautilus
+   186	14:50	checkquota
+   187	14:50	ls -ld /data/teacher
+   188	15:14	ml macs
+   189	15:14	macs2
+   190	15:35	/usr/local/apps/macs/2.1.1.20160309/bin/macs2
+   191	15:05	which module
+   192	15:05	module load TORTOISE
+   193	15:06	module purge
+   194	15:09	vi ~/.bashrc
+   195	15:20	rm slurm-21084449.out
+   196	15:20	cat slurm-20093847.out
+   197	15:20	cat slurm-14939693.out
+   198	15:21	rm slurm-*.out
+   199	15:28	mv x.sh x.tcsh
+   200	15:28	./x.tcsh
+   201	15:28	mv x.tcsh x.csh
+   202	15:28	./x.csh
+   203	15:28	mv x.csh x.sh
+   204	15:29	sed 's/bash/tcsh' x.sh
+   205	15:29	sed 's/bash/tcsh/' x.sh
+   206	15:29	sed -i 's/bash/tcsh/' x.sh
+   207	15:29	bash x.s
+   208	15:30	sed -i 's/tcsh/bash/' x.sh
+   209	15:40	chmod +x y.sh
+   210	15:40	cat x.sh
+   211	15:41	vi y.sh
+   212	15:41	./y.sh
+   213	15:41	bash y.sh
+   214	15:41	tcsh y.sh
+   215	15:41	rm x.sh y.sh
+   216	15:41	ls -ltr
+   217	15:41	rm slurm-21087408.out
+   218	15:42	vi x.sh
+   219	15:42	chmod +x x.sh
+   220	15:42	./x.sh
+   221	15:42	tcsh x.sh
+   222	15:42	bash x.sh
+   223	15:42	rm x.sh
+   224	13:47	rm danpos/
+   225	13:47	rm -r danpos
+   226	13:47	mkdir danpos_test
+   227	13:47	cd danpos_test/
+   228	13:49	danpos.py /usr/local/apps/danpos/2.2.2/testdata/nucleosome_sampleA_rep1.bowtie
+   229	13:53	rm -r danpos_test/
+   230	13:54	mkdir -p /data/$USER/danpos_test
+   231	13:54	cd /data/$USER/danpos_test
+   232	13:57	cp /usr/local/apps/danpos/2.2.2/testdata/nucleosome_sampleA_rep1.bowtie .
+   233	14:01	danpos.py dpos /usr/local/apps/danpos/2.2.2/testdata/nucleosome_sampleA_rep1.bowtie
+   234	14:05	rm *
+   235	14:06	rm -fr *
+   236	14:06	danpos.py dpos /usr/local/apps/danpos/2.2.2/testdata/nucleosome_sampleA_rep1.bowtie > danpos_dpos.log
+   237	14:15	cat danpos_dpos.log
+   238	14:19	module unload danpos
+   239	14:20	module load danpos
+   240	14:27	cd result/
+   241	14:27	cat pooled/
+   242	14:27	cd pooled/
+   243	14:27	cat usr_local_apps_danpos_2.2.2_testdata_nucleosome_sampleA_rep1.smooth.positions.xls
+   245	14:30	danpos -h
+   246	14:30	danpos.py -h
+   247	14:31	danpos.py -h > /scratch/teacher/tmp.txt
+   248	14:31	chmod 666 /scratch/teacher/tmp.txt
+   249	15:27	TEST_DATA=/usr/local/apps/danpos/2.2.2/testdata/
+   250	15:30	danpos.py dpos $TEST_DATA/nucleosome_sampleA_rep1.bowtie:$TEST_DATA/nucleosome_sampleB.bowtie
+   251	15:30	echo $TEST_DATA
+   252	15:30	export TEST_DATA=/usr/local/apps/danpos/2.2.2/testdata/
+   253	18:53	uptime
+   254	18:53	exi
+   255	9:57	ml drseq
+   256	10:00	Drseq.py
+   257	14:42	_Hooloovoo666
+   258	14:42	histor
+   259	14:43	history -d 274
+   260	14:43	history -h
+   261	14:43	vim .bash_history
+   262	14:44	vim .bash_history_biowulf
+   263	14:45	vim .bash_history_helix
+   265	14:46	vim .tcsh_history_helix
+   266	14:47	x
+   267	14:47	grep _Hoo .*
+   268	14:47	clc
+   269	14:47	clear
+   270	14:48	module load bismark
+   271	14:49	which deduplicate_bismark
+   272	11:32	ml snakemake/3.7.1
+   273	11:32	snakemake --help
+   274	17:15	df -hP
+   275	21:18	module load singularity
+   276	21:18	fx
+   277	21:18	ssh teacher@felix.nimh.nih.gov
+   278	10:47	ssh dtn01.cit.nih.gov
+   279	7:55	echo $SHELL
+   280	7:56	chsh --list-shells
+   281	7:57	whoami
+   282	7:57	echo $USER
+   283	7:57	echo $PWD
+   284	7:58	cd /home/$USER
+   285	8:03	ls -l
+   286	8:03	ls -l /data/classes/linux
+   287	8:04	cd /tmp
+   288	8:04	ls -lt
+   289	8:38	ccd
+   290	8:38	cd
+   292	8:38	mkdir LinxClass
+   293	8:38	mv LinxClass LinuxClass
+   294	8:38	cd LinuxClass
+   295	8:38	cp -r /data/classes/linux/* .
+   296	8:39	ls -la
+   297	8:39	export class=$PWD
+   298	10:52	echo 'echo Hello World!' > hello_world.sh
+   299	10:52	bash hello_world.sh
+   300	10:52	bash -x -v hello_world.sh
+   301	10:52	bash -v hello_world.sh
+   302	10:52	bash -v -x hello_world.sh
+   303	10:52	bash -x hello_world.sh
+   304	10:53	rm hello_world.sh
+   305	13:30	cd /gs3/test/take4
+   307	13:30	cat a
+   308	13:30	cat a.1
+   309	13:30	cat b
+   310	13:30	cat b.1
+   311	13:30	cat c
+   312	13:30	ls x
+   313	13:30	ls y
+   314	13:30	ls z
+   315	10:24	cd /data/teacher
+   316	10:24	cd temp
+   317	10:24	rm -rf kabuki-0.6.1*
+   318	10:27	ll /usr/local/Anaconda/pkgs/dbus-1.10.10-0/libexec/dbus-daemon-launch-helper
+   319	10:42	rm -rf test
+   320	10:44	conda create -p ./test python=2.7 matplotlib
+   321	10:56	source activate /spin1/users/teacher/temp/test
+   322	10:57	ll test
+   323	10:57	ll test/bin
+   324	10:57	source activate ./tst
+   325	10:57	source activate ./test
+   326	10:57	test/bin/python --version
+   327	10:58	test/bin/python
+   328	10:59	ll test/bin | grep activate
+   329	10:59	ll /usr/local/Anaconda/bin/activate
+   330	10:59	which activate
+   331	10:59	which source
+   332	10:59	type source
+   333	10:59	type
+   334	10:59	echo $0
+   335	11:16	op
+   336	11:16	top
+   337	12:09	run_lefse.py -help
+   338	12:15	ml
+   339	12:17	ll -d /usr/local/apps/lefse
+   340	12:17	ll /usr/local/apps/lefse/
+   341	12:17	ll /usr/local/apps/lefse/1.0.7/
+   342	12:17	ll /usr/local/apps/lefse/1.0.7/bin/
+   343	12:49	shnodes cn2270
+   344	12:49	ssh cn2270
+   345	12:49	ml lefse
+   346	12:49	hostname
+   347	12:49	m lpurge
+   348	12:49	ml purge
+   349	9:13	ssh teacher@biowulf.nih.gov
+   350	21:18	ll
+   351	21:18	ls -s
+   353	21:18	checkquota teacher
+   354	21:18	ml Anaconda
+   355	21:18	ls .conda/
+   356	21:19	ls .conda/envs
+   357	21:19	conda remove --all -n py27_helix
+   358	21:19	bash
+   359	13:46	cd /scratch
+   360	14:33	exit
+   361	13:22	mkdir /data/teacher/git
+   362	13:22	cd /data/teacher/git/
+   364	13:23	git config --global user.email "maoj@mail.nih.gov"
+   365	13:24	git config --global color.ui "Jean Mao"
+   366	13:32	pwd
+   367	13:33	git clone --recursive https://github.com/maojn/softwarecarpentry.git
+   371	13:38	more README.md
+   372	13:40	git stats
+   377	13:42	emacs -nw tod
+   383	13:53	git commit -m "Start 1"
+   386	13:55	e todo
+   389	13:59	git commit -m 'Added more'
+   392	14:00	git commit -m 'Added what'
+   393	14:03	emacs -nw todo
+   396	14:03	git diff
+   397	14:04	git diff --staged
+   398	14:05	git commit -m 'Added line 5'
+   400	14:05	git tag
+   401	14:05	git tag -h
+   403	14:14	git log
+   409	14:26	ls -a
+   410	14:26	cd ../
+   412	14:27	mv softwarecarpentry backup
+   413	14:27	git clone
+   417	14:28	cp ../backup/* ./
+   422	14:29	git -v
+   424	14:30	which wich pip
+   425	14:31	module avail git
+   426	14:31	which version
+   427	14:31	which git
+   428	14:32	ll /usr/bin/git
+   429	14:32	module load git
+   430	14:32	git --version
+   432	14:33	up
+   433	14:33	cd ..
+   435	14:33	rm -rf softwarecarpentry/
+   436	14:33	history
+   437	14:33	git clone https://github.com/maojn/softwarecarpentry.git
+   438	14:33	cd softwarecarpentry/
+   439	14:33	ls
+   440	14:34	git config --global user.email "maojn@hotmail.com"
+   441	14:34	history | grep config
+   442	14:34	git config --global user.name "Jean Mao"
+   443	14:34	git config --global color.ui "auto"
+   445	14:34	cp ../backup/todo .
+   446	14:34	git status
+   447	14:35	git add todo
+   448	14:35	git commit
+   449	14:35	git commit -m "trying to catch up..."
+   454	14:37	git push
+   455	14:40	history > history
