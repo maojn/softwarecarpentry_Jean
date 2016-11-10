@@ -1,0 +1,2 @@
+# softwarecarpentry
+git training session
